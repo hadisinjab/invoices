@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Responsive Design */
+:root {
+  /* Spacing */
+  --mobile-padding: 10px;
+  --tablet-padding: 20px;
+  --desktop-padding: 40px;
+
+  /* Font Sizes */
+  --mobile-title: 1.5rem;
+  --tablet-title: 2rem;
+  --desktop-title: 2.5rem;
+
+  /* Container Max Widths */
+  --mobile-container: 100%;
+  --tablet-container: 95%;
+  --desktop-container: 1400px;
+
+  /* Border Radius */
+  --mobile-radius: 10px;
+  --desktop-radius: 20px;
+}
+
+/* RTL Specific Styles */
+@layer base {
+  html {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+  }
+
+  body {
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+/* Responsive Utilities */
+@layer components {
+  .container-responsive {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6;
+  }
+
+  .table-responsive {
+    @apply overflow-x-auto;
+  }
+
+  .text-responsive {
+    @apply text-sm sm:text-base lg:text-lg;
+  }
+
+  .padding-responsive {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+
+  .margin-responsive {
+    @apply m-4 sm:m-6 lg:m-8;
+  }
+}
+
+/* Mobile First Responsive Breakpoints */
+@layer utilities {
+  .mobile-only {
+    @apply block sm:hidden;
+  }
+
+  .tablet-up {
+    @apply hidden sm:block;
+  }
+
+  .desktop-up {
+    @apply hidden lg:block;
+  }
+
+  .mobile-tablet {
+    @apply block lg:hidden;
+  }
+}

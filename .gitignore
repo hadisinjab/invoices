@@ -1,0 +1,123 @@
+# Laravel Framework
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+
+# Laravel Storage
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/testing/*
+/storage/logs/*.log
+
+# Laravel Cache
+/bootstrap/cache/*.php
+
+# IDE Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build Files
+/public/build
+/public/mix-manifest.json
+/public/css/app.css
+/public/js/app.js
+
+# Vite
+.vite/
+
+# Testing
+/coverage
+.phpunit.cache
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Backup Files
+*.bak
+*.backup
+*.old
+
+# Development Files
+*.dev
+*.local
+*.test
+
+# Composer
+composer.phar
+/vendor/
+
+# NPM
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Laravel Specific
+.env.example
+.env.local
+.env.staging
+.env.testing
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Uploads
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# Generated Files
+*.generated.php
+*.generated.js
+*.generated.css
+
+# Security
+*.pem
+*.key
+*.crt
+*.csr
+
+# Performance
+*.prof
+*.cache
+*.tmp
+
+# Documentation (optional - remove if you want to keep docs)
+*.md
+!README.md
+!LICENSE.md
+
+# Custom Exclusions
+/backup/
+/temp/
+/tmp/
+/logs/
+/cache/
