@@ -8,17 +8,19 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch",
-    "build:css": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css",
-    "dev": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch",
-    "watch": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch"
+    "build": "node_modules\\.bin\\tailwindcss -i ./resources/css/app.css -o ./public/css/app.css",
+    "build:css": "node_modules\\.bin\\tailwindcss -i ./resources/css/app.css -o ./public/css/app.css",
+    "dev": "node_modules\\.bin\\tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch",
+    "watch": "node_modules\\.bin\\tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11"
+    "postcss": "^8.5.6"
   }
 }
