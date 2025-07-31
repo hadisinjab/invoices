@@ -8,10 +8,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node_modules\\.bin\\tailwindcss -i ./resources/css/app.css -o ./public/css/app.css",
-    "build:css": "node_modules\\.bin\\tailwindcss -i ./resources/css/app.css -o ./public/css/app.css",
-    "dev": "node_modules\\.bin\\tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch",
-    "watch": "node_modules\\.bin\\tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch"
+    "build": "npx tailwindcss -i ./resources/css/app.css -o ./public/css/app.css",
+    "build:css": "npx tailwindcss -i ./resources/css/app.css -o ./public/css/app.css",
+    "dev": "npx tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch",
+    "watch": "npx tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch"
   },
   "keywords": [],
   "author": "",
